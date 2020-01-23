@@ -33,39 +33,34 @@ Para ejecutar el programa ejecutamos `mvn package`
 
 ## Running the tests
 
-
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
+Ejecutamos el comando `mvn test`
 ```
-Give an example
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running edu.escuelaing.arem.app.EstadisticasTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.031 s - in edu.escuelaing.arem.app.EstadisticasTest
+[INFO] Running edu.escuelaing.arem.app.LinkedListTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in edu.escuelaing.arem.app.LinkedListTest
+[INFO]
+[INFO] Results:
+[INFO]
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  3.991 s
+[INFO] Finished at: 2020-01-23T18:45:22-05:00
+[INFO] ------------------------------------------------------------------------
 ```
 
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
 
 ## Built With
 
-* Maven-Dependency managment
+*  [Maven](https://maven.apache.org/) - Dependency Management
 
-## Contributing
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
 
 ## Authors
 
