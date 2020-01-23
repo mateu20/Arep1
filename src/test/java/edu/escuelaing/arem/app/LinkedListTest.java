@@ -2,12 +2,16 @@ package edu.escuelaing.arem.app;
 
 import edu.escuelaing.arem.app.LinkedList;
 
+
 import junit.framework.TestCase;
-import junit.framework.Test;
+//import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
 
-//import org.junit.Test;
+import static junit.framework.Assert.*;
+import org.junit.jupiter.api.Test;
+
+
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,20 +19,39 @@ import java.util.Random;
 
 //import static org.junit.Assert.*;
 
-public class LinkedListTest extends TestCase {
+public class LinkedListTest{
 	
-
-
-	public void deberiaAñadirElementosaLaLista(){
+	@Test
+	public void deberiaAnadirElementosaLaLista(){
 		LinkedList <Integer> Lin = new LinkedList<Integer>();
 		for(int num=0;num<20;num++) {
 			Lin.add(num);
 		}
-		System.out.println( "1");
-		assertEquals(1,1);
+		
+		assertEquals(20,Lin.size());
 	
 	}
 	
+	@Test
 	
+	public void deberiaRemoverUnElementoDeLaLista() {
+		LinkedList Lin = new LinkedList<Integer>();
+		for (int num=0;num<20;num++) {
+			Lin.add(num);
+		}
+		Lin.remove(6);
+		assertEquals(19,Lin.size());
+	}
+	
+        
+	@Test
+        public void deberiaDarUnElementoPorSuIndice(){
+            LinkedList Lin = new LinkedList<Integer>();
+            for (int num=0;num<20;num++) {
+		Lin.add(num);
+            }
+            assertEquals(17,Lin.get(17));
+}
+        
 
 }

@@ -10,7 +10,7 @@ public class Estadisticas {
 	        }
 	        return sum/respuesta;
 	    }
-	    public static double Desviación(List<Double> num){
+	    public static double Desviacion(List<Double> num){
 	        double total = num.size();
 	        double promedio = Sumatoria(num);
 	        double n = 0;
